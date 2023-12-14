@@ -1,0 +1,10 @@
+<h2>This is a book component</h2>
+<input type="text" [(ngModel)]="userName" name="userName">
+<p>{{userName}}</p>
+<button (click)="checkenghth()" [disabled]="userName==='' ">click me</button
+>
+<p *ngIf="showMessage; else hideMessage"> User is create {{userName}}</p>
+<ng-template #hideMessage>
+    <p>User is not yet created</p>
+</ng-template>
+<h1 [ngStyle]="{backgroundColor: getColor()}">sidenav is {{sideNav}}</h1>
